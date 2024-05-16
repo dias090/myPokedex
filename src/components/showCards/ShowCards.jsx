@@ -41,7 +41,6 @@ function ShowCards() {
   const [pokemonList, setPokemonList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [search, setSearch] = useState("");
   const [filteredPokemon, setFilteredPokemon] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -80,7 +79,6 @@ function ShowCards() {
   }, [fetchApi, currentPage]);
 
   const handleSearch = async (event) => {
-    setSearch(event.target.value);
     if (event.target.value === "") {
       setFilteredPokemon(pokemonList);
     } else {
