@@ -1,0 +1,147 @@
+.pagination {
+    width: fit-content;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 30px auto 0px auto;
+    color: white !important;
+    padding: 10px 15px;
+}
+
+img {
+    pointer-events: none;
+}
+
+.pagination li a {
+    color: white;
+}
+
+.pagination li {
+    filter: brightness(80%);
+    
+}
+
+.pagination li:hover {
+    
+    filter: brightness(100%);
+}
+
+
+
+.cards_container {
+    width: 80%;
+    margin: 50px auto 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+@media screen and (max-width: 700px) {
+.cards_container{
+    width: 90% !important;
+    grid-template-columns: 1fr;
+}
+}
+
+@media screen and (max-width: 992px) and (min-width: 700px) {
+.cards_container{
+    width: 85% !important;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+.cards_container{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1200px) {
+.cards_container{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+}
+
+.cards_container .card {
+    margin: 0px !important;
+    overflow: hidden;
+}
+
+.pokemon_card {
+    height: 100%;
+    padding: 15px 5px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.card_pt1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon_name {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.pokemon_id {
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.405);
+    margin: 0px !important;
+    color: white;
+    z-index: 10;
+}
+
+.pokemon_types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon_types span {
+    background-color: red;
+    margin: 5px 5px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.card_pt2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_pt2 img {
+    height: 100%;
+    width: 100%;
+    max-height: 150px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.pt2_bg_img {
+    pointer-events: none;
+    position: absolute;
+    width: 50% !important;
+    right: -5px;
+    bottom: -5px;
+    z-index: 0 !important;
+}
+
+
+  

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Nunito:600');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    pointer-events: none;
+}
+
+#card_container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main_card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#card_container .container {
+    width: 100%;
+}
+
+#card_container .col {
+    padding: 0px;
+    position: relative;
+}
+
+.pokemon_img_container {
+    max-height: 60vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon_img_container img {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    max-height: 40vh;
+}
+
+.text_container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.text_container .pokemon_name {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 40px !important;
+}
+
+.text_container .pokemon_types {
+    color: white;
+    font-size: 20px;
+    justify-content: start;
+}
+
+.pokemons_id {
+    position: absolute;
+    right: 0px;
+    font-size: 25px;
+}
+
+.pokemon_title {
+    font-size: 23px;
+}
+
+.pokemon_text {
+    width: 100%;
+    display: flex;
+}
+
+.pokemon_text div:nth-child(1) {
+    min-width: fit-content;
+    width: 30% !important;
+    font-size: 18px;
+}
+
+.pokemon_text div:nth-child(2) {
+    text-indent: 5px !important;
+}
+
+#card_container .card {
+    margin: 0px;
+    padding: 15px 20px;
+    box-shadow: none;
+    border-radius: 0px;
+    border-top: 1px solid grey;
+}
+
+.bottom_button {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .pokemon_img_container {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .main_card {
+        width: 100% !important;
+        height: fit-content;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        border-radius: 0px;
+    }
+
+    .pokemon_img_container {
+        height: 60vh;
+    }
+
+    .pokemon_img_container img {
+        width: 70%;
+    }
+
+    .main_card .second_main {
+        background-color: white;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+    }
+
+    #card_container .card {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    
+}
+.row {
+    margin: 0px !important;
+}
