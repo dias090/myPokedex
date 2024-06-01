@@ -14,7 +14,7 @@ To install and run this project on your local machine, follow these steps:
 
 1. Clone the repository to your local machine using
    ```
-   git clone https://github.com/dias090/My_Pokedex.git
+   git clone https://github.com/dias090/myPokedex.git
    ```
 2. Navigate to the project directory using
    ```
@@ -29,7 +29,7 @@ To install and run this project on your local machine, follow these steps:
    npm start
    ```
 
-Or you can see my project via this link: [mypokedex]()
+Or you can see my project via this link: [mypokedex](https://my-pokedex-rosy.vercel.app/)
 
 ## Usage
 
