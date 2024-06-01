@@ -18,7 +18,7 @@ To install and run this project on your local machine, follow these steps:
    ```
 2. Navigate to the project directory using
    ```
-   cd My_Pokedex
+   cd myPokedex
    ```
 3. Install the dependencies using
    ```
