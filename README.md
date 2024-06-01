@@ -29,7 +29,7 @@ To install and run this project on your local machine, follow these steps:
    npm start
    ```
 
-Or you can see my project via this link: [mypokedex](https://my-pokedex-rosy.vercel.app/)
+Or you can see my project via this link: [myPokedex](https://my-pokedex-rosy.vercel.app/)
 
 ## Usage
 
