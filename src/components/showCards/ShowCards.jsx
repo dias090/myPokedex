@@ -6,6 +6,7 @@ import "./ShowCards.css";
 import Navbar from "../navbar/Navbar";
 import Pokeball from "../../assets/pokeball.svg";
 import ImgNotFound from "../../assets/img_not_found.png";
+import Background_img from "../../assets/main_page_background_img.jpg"
 
 const getColorFromType = (types) => {
   const typeColorMapping = {
@@ -146,9 +147,9 @@ function ShowCards() {
   return (
     <div
       style={{
-        backgroundImage: `url(https://w.wallha.com/ws/14/yATVkauL.png)`,
-        backgroundSize: "100%",
-        minHeight: "100vh",
+        background: 'linear-gradient(to bottom, #0d3956 0%, #537895 100%)',
+        // backgroundSize: "100%",
+        // minHeight: "100vh",
       }}
     >
       <Navbar onSearch={handleSearch} />
